@@ -61,8 +61,9 @@ def installRepo(repo: (String, String)): Boolean = {
   new File(fpath).exists() || run(s"git clone $src $fpath")
 }
 
-@main def main(): Unit =
+@main def main(): Unit = {
   run("brew tap homebrew/cask-fonts")
   brewPackages.foreach(installBrew)
   brewCasks.foreach(installCask)
   repos.foreach(installRepo)
+}
