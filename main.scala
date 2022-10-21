@@ -45,7 +45,7 @@ val repos = List(
 )
 
 def run(cmd: String): Boolean = {
-  println(s"\n$cmd")
+  println(s"\n>>> $cmd")
   s"$cmd".! == 0
 }
 
@@ -63,6 +63,6 @@ def installRepo(repo: (String, String)): Boolean = {
 
 @main def main(): Unit =
   run("brew tap homebrew/cask-fonts")
-  brewPackages.map(installBrew(_))
-  brewCasks.map(installCask(_))
-  repos.map(installRepo(_))
+  brewPackages.foreach(installBrew)
+  brewCasks.foreach(installCask)
+  repos.foreach(installRepo)
