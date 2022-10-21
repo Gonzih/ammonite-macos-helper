@@ -26,6 +26,7 @@ val brewCasks = List(
   "hammerspoon",
   "telegram-desktop",
   "vlc",
+  "alacritty",
   "font-cascadia-code",
   "font-cascadia-code-pl",
   "font-cascadia-mono",
