@@ -33,12 +33,14 @@ val brewCasks = List(
 )
 
 val repos = List(
-  ("git@github.com:Gonzih/.vim.git",     "~/.vim"            ),
-  ("git@github.com:Gonzih/.mc.git",      "~/.config/mc"      ),
-  ("git@github.com:Gonzih/.fish.git",    "~/.config/fish"    ),
-  ("git@github.com:Gonzih/.xmonad.git",  "~/.xmonad"         ),
-  ("git@github.com:Gonzih/.mutt.git",    "~/.mutt"           ),
-  ("git@github.com:Gonzih/nix-home.git", "~/.config/nixpkgs" ),
+  ("git@github.com:Gonzih/dotfiles.git",     "~/dotfiles" ),
+  ("git@github.com:Gonzih/.hammerspoon.git", "~/.hammerspoon"    ),
+  ("git@github.com:Gonzih/.vim.git",         "~/.vim"            ),
+  ("git@github.com:Gonzih/.mc.git",          "~/.config/mc"      ),
+  ("git@github.com:Gonzih/.fish.git",        "~/.config/fish"    ),
+  ("git@github.com:Gonzih/.xmonad.git",      "~/.xmonad"         ),
+  ("git@github.com:Gonzih/.mutt.git",        "~/.mutt"           ),
+  // ("git@github.com:Gonzih/nix-home.git",     "~/.config/nixpkgs" ),
 )
 
 def run(cmd: String): Boolean = {
