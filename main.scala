@@ -41,8 +41,10 @@ val repos = List(
   ("git@github.com:Gonzih/nix-home.git", "~/.config/nixpkgs" ),
 )
 
-def run(cmd: String): Boolean =
-  s"echo $cmd".! == 0
+def run(cmd: String): Boolean = {
+  println(cmd)
+  s"$cmd".! == 0
+}
 
 def installBrew(pkg: String): Boolean =
   run(s"brew install $pkg")
