@@ -61,7 +61,9 @@ def installRepo(repo: (String, String)): Boolean = {
 }
 
 @main
-def main(): Unit =
+def main(): Unit = {
+  run("brew tap homebrew/cask-fonts")
   brewPackages.map(installBrew(_))
   brewCasks.map(installCask(_))
   repos.map(installRepo(_))
+}
