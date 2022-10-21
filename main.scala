@@ -4,7 +4,7 @@ import java.io.File
 val brewPackages = List(
   "ansible",
   "go",
-  "coursier",
+  "coursier/formulas/coursier",
   "fish",
   "htop",
   "mc",
