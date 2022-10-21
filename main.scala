@@ -45,7 +45,7 @@ val repos = List(
 )
 
 def run(cmd: String): Boolean = {
-  println(cmd)
+  println(s"\n$cmd")
   s"$cmd".! == 0
 }
 
@@ -56,15 +56,13 @@ def installCask(pkg: String): Boolean =
   run(s"brew install --cask $pkg")
 
 def installRepo(repo: (String, String)): Boolean = {
-  val src = repo._1
-  val path = repo._2.replaceFirst("^~", System.getProperty("user.home"))
-  new File(path).exists() || run(s"git clone $src $path")
+  val (src, path) = repo
+  val fpath = path.replaceFirst("^~", System.getProperty("user.home"))
+  new File(fpath).exists() || run(s"git clone $src $fpath")
 }
 
-@main
-def main(): Unit = {
+@main def main(): Unit =
   run("brew tap homebrew/cask-fonts")
   brewPackages.map(installBrew(_))
   brewCasks.map(installCask(_))
   repos.map(installRepo(_))
-}
