@@ -18,6 +18,7 @@ val brewPackages = List(
   "pinentry-mac",
   "wget",
   "tig",
+  "tmux",
 )
 
 val brewCasks = List(
