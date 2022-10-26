@@ -37,6 +37,7 @@ val brewCasks = List(
 val repos = List(
   ("git@github.com:Gonzih/dotfiles.git",              "~/dotfiles"    ),
   ("git@github.com:Gonzih/.hammerspoon.git",          "~/.hammerspoon"),
+  ("https://github.com/syl20bnr/spacemacs",           " ~/.emacs.d"   ),
   ("git@github.com:Gonzih/.vim.git",                  "~/.vim"        ),
   ("git@github.com:Gonzih/.mc.git",                   "~/.config/mc"  ),
   ("git@github.com:Gonzih/.fish.git",                 "~/.config/fish"),
@@ -52,10 +53,10 @@ def run(cmd: String): Boolean = {
 }
 
 def installBrew(pkg: String): Boolean =
-  run(s"brew install $pkg")
+  run(s"arch -arm64 brew install $pkg")
 
 def installCask(pkg: String): Boolean =
-  run(s"brew install --cask $pkg")
+  run(s"arch -arm64 brew install --cask $pkg")
 
 def installRepo(repo: (String, String)): Boolean = {
   val (src, path) = repo
