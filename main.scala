@@ -17,8 +17,13 @@ val brewPackages = List(
   "ykman",
   "pinentry-mac",
   "wget",
+  "rename",
   "tig",
   "tmux",
+  "rustup-init",
+  "npm",
+  "firebase-cli",
+  "youtube-dl",
 )
 
 val brewCasks = List(
@@ -29,6 +34,7 @@ val brewCasks = List(
   "telegram-desktop",
   "vlc",
   "alacritty",
+  "docker",
   "font-cascadia-code",
   "font-cascadia-code-pl",
   "font-cascadia-mono",
