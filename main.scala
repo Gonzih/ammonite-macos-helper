@@ -24,6 +24,7 @@ val brewPackages = List(
   "npm",
   "firebase-cli",
   "youtube-dl",
+  "poetry",
 )
 
 val brewCasks = List(
