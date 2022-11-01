@@ -63,7 +63,7 @@ repos = [
 
 def run(cmd: str):
     info(cmd)
-    subprocess.run("bash", "-c", cmd)
+    subprocess.run(["bash", "-c", cmd])
 
 
 def install_brew(pkg: str):
