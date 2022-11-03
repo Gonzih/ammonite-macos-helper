@@ -82,8 +82,12 @@ def install_repo(repo):
         run(f"git clone {src} {fpath}")
 
 
-if __name__ == "__main__":
+def main():
     run("brew tap homebrew/cask-fonts")
     list(map(install_brew, brew_packages))
     list(map(install_cask, brew_casks))
     list(map(install_repo, repos))
+
+
+if __name__ == "__main__":
+    main()
