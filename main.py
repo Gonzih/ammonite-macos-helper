@@ -8,6 +8,7 @@ coloredlogs.install(level='DEBUG')
 brew_packages = [
     "ansible",
     "go",
+    "openjdk@17"
     "coursier/formulas/coursier",
     "fish",
     "fisher",
@@ -31,6 +32,10 @@ brew_packages = [
     "youtube-dl",
     "poetry",
     "yapf",
+    "rust-analyzer",
+    "git-lfs",
+    "prettier",
+    "firebase-cli",
 ]
 
 brew_casks = [
@@ -38,10 +43,13 @@ brew_casks = [
     "cocoapods",
     "emacs",
     "hammerspoon",
+    "amethyst",
     "telegram-desktop",
     "vlc",
     "alacritty",
     "docker",
+    "keepassxc",
+    "zoom",
     "font-cascadia-code",
     "font-cascadia-code-pl",
     "font-cascadia-mono",
