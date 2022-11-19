@@ -50,6 +50,7 @@ brew_casks = [
     "docker",
     "keepassxc",
     "zoom",
+    "notion",
     "font-cascadia-code",
     "font-cascadia-code-pl",
     "font-cascadia-mono",
