@@ -36,6 +36,8 @@ brew_packages = [
     "git-lfs",
     "prettier",
     "firebase-cli",
+    "rbenv",
+    "ruby-build",
 ]
 
 brew_casks = [
